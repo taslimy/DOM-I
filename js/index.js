@@ -93,10 +93,10 @@ document.querySelector(".container header nav").append(lastNav);
 
 // # Note: you can write HTML tags in a string :o # //
 const h1 = document.getElementsByTagName('h1')[0];
-h1.innerHTML = 'DOM Is <br> Awesome';
+h1.append(siteContent['cta']['h1']);
  
 const button = document.getElementsByTagName('button')[0];
-button.innerHTML = 'Get Started';
+button.append(siteContent['cta']['button']);
 
 const ctaIMG = document.getElementById('cta-img');
 ctaIMG.setAttribute('src', siteContent['cta']['img-src']);
