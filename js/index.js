@@ -75,7 +75,7 @@ contact.append(siteContent['nav']['nav-item-6']);
 // Task #3 Add New Links to Nav // 
 
 //https://www.w3schools.com/jsref/met_node_appendchild.asp 
-//https://www.w3schools.com/jquery/html_prepend.asp
+//https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append
 
 const firstNav = document.createElement("a");
 firstNav.setAttribute("href", "#");
