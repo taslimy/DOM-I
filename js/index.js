@@ -51,7 +51,6 @@ logo.setAttribute('src', siteContent['nav']['img-src'])
 // navBar[i].textContent = Object.values(siteContent.nav)[i]; // we have to call object because its an Object.vlaue to grab the items.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 
-
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(a => (a.style.color = 'green'));
 
