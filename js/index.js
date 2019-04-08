@@ -45,37 +45,50 @@ logo.setAttribute('src', siteContent['nav']['img-src'])
 
 // For Loop
 // const navBar = document.querySelectorAll('nav a'); // Grab all the selector of nav a
+
 // for (let i = 0; i < navBar.length; i++) { // now we want it to start from the index of 0 and loop over it.
+
 // navBar[i].textContent = Object.values(siteContent.nav)[i]; // we have to call object because its an Object.vlaue to grab the items.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 
 
-// const navLinks = document.querySelectorAll('nav a');
-// navLinks.forEach(a => (a.style.color = 'green'));
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(a => (a.style.color = 'green'));
 
 const services = document.getElementsByTagName('a')[0];
 services.append(siteContent['nav']['nav-item-1']);
-services.style.color = 'Green';
 
 const product = document.getElementsByTagName('a')[1];
 product.append(siteContent['nav']['nav-item-2']);
-product.style.color = 'Green';
 
 const vision = document.getElementsByTagName('a')[2];
 vision.append(siteContent['nav']['nav-item-3']);
-vision.style.color = 'Green';
 
 const features = document.getElementsByTagName('a')[3];
 features.append(siteContent['nav']['nav-item-4']);
-features.style.color = 'Green';
 
 const about = document.getElementsByTagName('a')[4];
 about.append(siteContent['nav']['nav-item-5']);
-about.style.color = 'Green';
 
 const contact = document.getElementsByTagName('a')[5];
 contact.append(siteContent['nav']['nav-item-6']);
-contact.style.color = 'Green';
+
+// Task #3 Add New Links to Nav // 
+
+//https://www.w3schools.com/jsref/met_node_appendchild.asp 
+//https://www.w3schools.com/jquery/html_prepend.asp
+
+const firstNav = document.createElement("a");
+firstNav.setAttribute("href", "#");
+firstNav.innerHTML = "First";
+firstNav.style.color = "green";
+document.querySelector(".container header nav").prepend(firstNav);
+
+const lastNav = document.createElement("a");
+lastNav.setAttribute("href", "#");
+lastNav.innerHTML = "Last";
+lastNav.style.color = "green";
+document.querySelector(".container header nav").append(lastNav);
 
 // CTA Section //
 
