@@ -91,7 +91,7 @@ document.querySelector(".container header nav").append(lastNav);
 
 // CTA Section //
 
-// # Note: you can wirte HTML tags in a string :o # //
+// # Note: you can write HTML tags in a string :o # //
 const h1 = document.getElementsByTagName('h1')[0];
 h1.innerHTML = 'DOM Is <br> Awesome';
  
